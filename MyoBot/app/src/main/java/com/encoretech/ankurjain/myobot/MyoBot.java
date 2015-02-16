@@ -254,7 +254,6 @@ public class MyoBot extends Activity {
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
         if(mBluetoothAdapter == null)
         {
-            //textView4.setText("No BT Found");
         }
 
         if(!mBluetoothAdapter.isEnabled())
@@ -275,7 +274,6 @@ public class MyoBot extends Activity {
                 }
             }
         }
-        //textView4.setText("BT Found");
     }
 
     void openBT() throws IOException
@@ -288,7 +286,6 @@ public class MyoBot extends Activity {
 
         beginListenForData();
 
-        //textView4.setText("BT Opened");
 
         btstatus = true;
     }
@@ -328,7 +325,6 @@ public class MyoBot extends Activity {
                                     {
                                         public void run()
                                         {
-                                            //textView3.setText(data);
                                         }
                                     });
                                 }
@@ -352,10 +348,8 @@ public class MyoBot extends Activity {
 
     void sendData() throws IOException
     {
-        //String msg = myTextbox.getText().toString();
         msg += ",\n";
         mmOutputStream.write(msg.getBytes());
-        //textView4.setText("Data Sent");
     }
 
     void closeBT() throws IOException
@@ -364,7 +358,6 @@ public class MyoBot extends Activity {
         mmOutputStream.close();
         mmInputStream.close();
         mmSocket.close();
-        //textView4.setText("BT Closed");
 
         btstatus = false;
     }
