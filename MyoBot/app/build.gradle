@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "21.1.2"
+
+    defaultConfig {
+        applicationId "com.encoretech.ankurjain.myobot"
+        minSdkVersion 21
+        targetSdkVersion 21
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    repositories {
+        maven {
+            // this must point to the myorepository distributed with the Myo SDK
+            url 'C:\\Users\\AnkurJain\\Documents\\myo-android-sdk-0.10.0\\myo-android-sdk-0.10.0\\myorepository'
+        }
+    }
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:21.0.3'
+    compile 'com.thalmic:myosdk:0.10.0@aar'
+
+}
