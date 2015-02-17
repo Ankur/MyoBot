@@ -1,5 +1,6 @@
 # MyoBot
 Control a servo-robot with Myo.
+
 Myo ---> Android ---> Arduino
 
 ## Prerequisites
