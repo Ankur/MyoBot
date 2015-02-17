@@ -1,5 +1,5 @@
 # MyoBot
-Control a servo-robot with Myo.
+MyoBot is a simple Android application that lets you send your Myo's position to an Arduino, enabling guided robot control.
 
 ![demo](http://i.imgur.com/d7tx5Z9.gif)
 
