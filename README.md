@@ -1,7 +1,7 @@
 # MyoBot
 Control a servo-robot with Myo.
 
-![demo](http://i.imgur.com/ePohxBT.webm)
+![demo](http://i.imgur.com/d7tx5Z9.gif)
 
 Myo ---> Android ---> Arduino
 
